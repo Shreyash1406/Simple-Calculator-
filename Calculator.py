@@ -1,5 +1,6 @@
 import tkinter as tk
 
+#Creating functions
 def button_click(number):
 
   current = entry.get()
@@ -23,13 +24,13 @@ def button_equal():
   entry.insert(tk.END, result)
 
 root = tk.Tk()
-
+#Title
 root.title("Simple Calculator")
 
 entry = tk.Entry(root, width=35, borderwidth=5)
 
 entry.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
-
+#Content in GUI
 button_1 = tk.Button(root,
 
                      text="1",
@@ -189,7 +190,7 @@ button_clear = tk.Button(root,
                          pady=20,
 
                          command=button_clear)
-
+#Arranging Buttons
 button_1.grid(row=1, column=0)
 
 button_2.grid(row=1, column=1)
